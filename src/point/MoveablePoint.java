@@ -50,7 +50,10 @@ public class MoveablePoint extends Point {
         return super.toString() + " and Speed = (" + xSpeed + " , " + ySpeed + ")";
     }
 
-    public void move() {
+    public MoveablePoint move() {
         super.setXY(super.getX() + xSpeed, super.getY() + ySpeed);
+//        super.setX(super.getX()+xSpeed);
+//        super.setY(super.getY()+ySpeed);
+        return this;
     }
 }
